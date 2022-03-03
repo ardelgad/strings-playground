@@ -5,11 +5,10 @@ let letraBuscada = "y";
 let palabraSecreta = "arepa";
 let i = 0;
 
-while (!encontrado && i < palabraSecreta.length) {
-    encontrado = (palabraSecreta[i] != letraBuscada)
+while (i < palabraSecreta.length-1) {
+    encontrado = palabraSecreta[i]===(letraBuscada)
     i++;
 }
-
 if (encontrado) {
     console.log(`${palabraSecreta} contiene la letra ${letraBuscada}`);
 }
